@@ -14,6 +14,15 @@ Route::get('/', function () {
     ]);
 });
 
+// Route::get('/', function () {
+//     return Inertia::render('Welcome', [
+//         'canLogin' => Route::has('login'),
+//         'canRegister' => Route::has('register'),
+//         'laravelVersion' => Application::VERSION,
+//         'phpVersion' => PHP_VERSION,
+//     ]);
+// });
+
 
 
 
@@ -32,9 +41,6 @@ Route::middleware([
 
 
 
-// Route::get('/about', function () {
-//     return Inertia::render('AboutUs'); // This will load the About.vue component
-// });
 
 Route::get('/about-us', function () {
     return Inertia::render('AboutUs'); // 'AboutUs' corresponds to the Vue component

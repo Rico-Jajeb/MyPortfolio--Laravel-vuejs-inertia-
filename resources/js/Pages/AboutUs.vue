@@ -1,11 +1,12 @@
 <template>
+     <Head title="About Us" />
     <AppLayout>
         <main>
             <header>
            
             </header>
         </main>
-        
+
         <article>
             <h1>This is the About Page</h1>
         </article>
@@ -15,4 +16,5 @@
 
 <script setup>
    import AppLayout from '@/Layouts/MainLayout.vue';
+   import { Head } from '@inertiajs/vue3'
 </script>
